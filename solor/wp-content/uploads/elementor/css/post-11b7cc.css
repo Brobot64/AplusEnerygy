@@ -1,11 +1,11 @@
 .elementor-kit-11{
-    --e-global-color-primary:#2a344f
+    --e-global-color-primary:#021e43 /*#2a344f*/
     ;
     --e-global-color-secondary:#EFF1ED;
     --e-global-color-text:#888888;
-    --e-global-color-accent:#fdcd2a; /* Changed from #89EA5F */
+    --e-global-color-accent:#fbd65b ; /* #fdcd2a Changed from #89EA5F */
     --e-global-color-75c969e:#FFFFFF;
-    --e-global-color-a44a32f: #2a344fA6; /* Changed from #163300A6 */
+    --e-global-color-a44a32f: #021e43A6; /* Changed from #163300A6 */
     --e-global-color-75c282f:#FFFFFF20;
     --e-global-color-380a858:#000000;
     --e-global-typography-primary-font-family:"Rajdhani";
