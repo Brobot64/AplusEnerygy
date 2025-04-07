@@ -8394,6 +8394,21 @@ h1, h2, h3, h4, h5,
   line-height: 25.67px;
 }
 
+.annocement .highlights h4 {
+  text-transform: capitalize;
+}
+
+.annocement .highlights ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.annocement .highlights ul li {
+  list-style: none;
+}
+
 .ratio {
   margin-right: auto;
   margin-left: auto;
