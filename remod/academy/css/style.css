@@ -8406,6 +8406,7 @@ h1, h2, h3, h4, h5,
 }
 
 .annocement .highlights ul li {
+  text-align: center !important;
   list-style: none;
 }
 
