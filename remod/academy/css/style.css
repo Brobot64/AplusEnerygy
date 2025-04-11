@@ -4,6 +4,12 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+
 :root {
   --aplus: #042044;
   --blue: #007bff;
@@ -8658,4 +8664,9 @@ footer .underlins p a {
   .split > * {
     width: 100%;
   }
+}
+
+
+html, body, p, h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito Sans", sans-serif !important;
 }

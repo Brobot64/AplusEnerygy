@@ -27,3 +27,107 @@
 						min-height: 100% !important;
 					}
 
+
+
+
+        .lil-proj {
+            display: flex;
+            flex-direction: row;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .lil-proj img {
+            width: 40%;
+            object-fit: cover;
+            height: auto;
+        }
+        
+        .textsr {
+            width: 60%;
+            padding: 30px;
+            position: relative;
+        }
+        
+        .textsr h3 {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .textsr p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .location, .packages, .user {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        
+        .textsr i {
+            margin-right: 10px;
+            color: #4CAF50;
+            min-width: 20px;
+        }
+        
+        .textsr a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .textsr a:hover {
+            background-color: #3e8e41;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .lil-proj {
+                flex-direction: column;
+            }
+            
+            .lil-proj img {
+                width: 100%;
+                max-height: 250px;
+            }
+            
+            .textsr {
+                width: 100%;
+                padding: 20px;
+            }
+            
+            .packages span {
+                display: inline-block;
+                width: calc(100% - 30px);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .textsr h3 {
+                font-size: 1.3rem;
+            }
+            
+            .textsr p {
+                font-size: 0.95rem;
+            }
+            
+            .location, .packages, .user {
+                font-size: 0.9rem;
+            }
+        }
