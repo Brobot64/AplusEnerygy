@@ -8386,13 +8386,13 @@ h1, h2, h3, h4, h5,
 }
 
 .annocement .texts > * {
-  max-width: 45%;
-  width: 45%;
+  max-width: 48%;
+  width: 48%;
 }
 
 .annocement .texts {
   margin-top: 50px;
-  gap: 6rem;
+  gap: 4rem;
 }
 
 .annocement .texts p {
@@ -8412,8 +8412,24 @@ h1, h2, h3, h4, h5,
 }
 
 .annocement .highlights ul li {
-  text-align: center !important;
+  text-align: left !important;
   list-style: none;
+}
+
+.buttons {
+  background-color: #004085;
+  color: white;
+  padding: 15px 27px;
+  border-radius: 15px;
+  border: #004085 solid 1.5px;
+  text-transform: capitalize;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .annocement .highlights ul li {
+    font-size: 18px !important;
+  }
 }
 
 .ratio {
@@ -8602,6 +8618,63 @@ footer .underlins p a {
 .regform form .item label {
   font-weight: 500;
 }
+
+
+
+/* Payment Details Badge */
+
+.act-badge {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /* background-color: steelblue; */
+}
+
+.act-badge h1 {
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.act-badge .note {
+  font-size: 20px;
+  font-style: italic;
+  color: #040505;
+  font-weight: 500;
+}
+
+.act-badge .note b {
+  text-transform: uppercase;
+}
+
+.act-badge .details {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.act-badge .details .min-det {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.act-badge .details .min-det h4 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #042044;
+}
+
+.act-badge .details .min-det h2 {
+  font-size: 42px;
+  line-height: 51px;
+  font-weight: 800;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
 
 /* End Style */
 

@@ -596,7 +596,8 @@ header.main-header .header-sticky.active{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: linear-gradient(90deg, var(--overlay-color) 0%, transparent 100%);
+	background: linear-gradient(90deg, #051654c7 0%, #141e5cd1 100%);
+	/* background: linear-gradient(90deg, var(--overlay-color) 0%, transparent 100%); */
 }
 
 .page-header-box{
