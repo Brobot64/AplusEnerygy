@@ -8413,6 +8413,7 @@ h1, h2, h3, h4, h5,
 
 .annocement .highlights ul li {
   text-align: left !important;
+  font-size: 21.5px; 
   list-style: none;
 }
 
@@ -8423,6 +8424,21 @@ h1, h2, h3, h4, h5,
   border-radius: 15px;
   border: #004085 solid 1.5px;
   text-transform: capitalize;
+}
+
+.regs {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #fefefe;
+  color: #004085;
+  font-size: 40px;
+  font-weight: 800;
+  transition: color .3s ease-in-out;
+}
+
+.regs:hover {
+  color: #fefefe;
+  background-color: #004085;
 }
 
 
