@@ -148,9 +148,9 @@
 						(Beside Mama Gold).
 					</p>
 
-					<br><br><br><br><br>
+				<!--	<br><br><br><br><br>
 
-					<h3>Registeration Process - Step By Step</h3>
+					 <h3>Registeration Process - Step By Step</h3>
 
 					<ol>
 						<li>
@@ -183,105 +183,8 @@
 							🔘 <b>No I haven't paid</b> (To make further enquiries)
 							</p>
 						</li>
-					</ol>
+					</ol> -->
 				</div>
-			</div>
-		</div>
-
-		<div class="regform">
-			<div class="container">
-				<form action="">
-					<div class="split">
-						<div class="form-group">
-							<label for="">First Name <span>*</span></label>
-							<input type="text" class="form-control" required />
-						</div>
-
-						<div class="form-group">
-							<label for="">Last Name <span>*</span></label>
-							<input type="text" class="form-control" required />
-						</div>
-					</div>
-
-					<div class="split">
-						<div class="form-group">
-							<label for="">Email <span>*</span></label>
-							<input type="text" class="form-control" required />
-						</div>
-						<div class="form-group">
-							<label for="">Phone Number <span>*</span></label>
-							<input type="text" class="form-control" required />
-						</div>
-					</div>
-
-					<div class="form-group">
-						<label for="">State of Origin <span>*</span></label>
-						<input type="text" class="form-control" required />
-					</div>
-
-					<div class="split">
-						<div class="form-group">
-							<label for=""
-								>Background in Sciences at least Up to Senior Secondary School
-								Level <span>*</span></label
-							>
-							<div class="choice">
-								<div class="item">
-									<input type="radio" name="" id="" />
-									<label for="">Yes</label>
-								</div>
-								<div class="item">
-									<input type="radio" name="" id="" />
-									<label for="">No</label>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for=""
-								>Interest or Little Experience in Electrical Power Generation?
-								<span>*</span></label
-							>
-							<div class="choice">
-								<div class="item">
-									<input type="radio" name="" id="" />
-									<label for="">Yes</label>
-								</div>
-								<div class="item">
-									<input type="radio" name="" id="" />
-									<label for="">No</label>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="form-group d-flex flex-column">
-						<label for=""
-							>State Briefly Where Experience Was Gained. <span>*</span></label
-						>
-						<textarea name="" id="" rows="5" class="p-3"></textarea>
-					</div>
-
-					<div class="form-group">
-						<label for=""
-							>Gennex Technologies is committed to protecting and respecting
-							your privacy, and we’ll only use your personal information to
-							administer your account and to provide the products and services
-							you requested from us.
-						</label>
-						<div class="choice">
-							<div class="item">
-								<input type="radio" name="" id="" />
-								<label for=""
-									>By clicking "Register", I consent to receiving updates about
-									the next solar academy</label
-								>
-							</div>
-						</div>
-					</div>
-
-					<input type="submit" class="buttons py-2 px-4" value="Submit" />
-				</form>
 			</div>
 		</div>
 
@@ -308,6 +211,95 @@
 
 			<p class="note">For every transaction/deposit/transfer made to the above account, save a <b>screenshot</b> for reference purpose</p>
 		</div>
+
+		<hr>
+		
+		<div class="regform">
+			<div class="container">
+				<form id="registrationForm" onsubmit="handleSubmit(event)">
+					<div id="message" style="display: none; margin-bottom: 20px;"></div>
+					<div id="loading" style="display: none;">Loading...</div>
+
+					<div class="split">
+						<div class="form-group">
+							<label for="firstName">First Name <span>*</span></label>
+							<input type="text" id="firstName" class="form-control" required />
+						</div>
+
+						<div class="form-group">
+							<label for="lastName">Last Name <span>*</span></label>
+							<input type="text" id="lastName" class="form-control" required />
+						</div>
+					</div>
+
+					<div class="split">
+						<div class="form-group">
+							<label for="">Email <span>*</span></label>
+							<input type="text" id="email" class="form-control" required />
+						</div>
+						<div class="form-group">
+							<label for="">Phone Number <span>*</span></label>
+							<input type="text" id="phone" class="form-control" required />
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="">State of Origin <span>*</span></label>
+						<input type="text" id="stateOfOrigin" class="form-control" required />
+					</div>
+
+					<div class="split">
+						<div class="form-group">
+							<label for="scienceBackground">Background in Sciences at least Up to Senior Secondary School Level <span>*</span></label>
+							<div class="choice">
+								<div class="item">
+									<input type="radio" name="scienceBackground" id="scienceBackgroundYes" value="Yes" required />
+									<label for="scienceBackgroundYes">Yes</label>
+								</div>
+								<div class="item">
+									<input type="radio" name="scienceBackground" id="scienceBackgroundNo" value="No" required />
+									<label for="scienceBackgroundNo">No</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="powerExperience">Interest or Little Experience in Electrical Power Generation? <span>*</span></label>
+							<div class="choice">
+								<div class="item">
+									<input type="radio" name="powerExperience" id="powerExperienceYes" value="Yes" required />
+									<label for="powerExperienceYes">Yes</label>
+								</div>
+								<div class="item">
+									<input type="radio" name="powerExperience" id="powerExperienceNo" value="No" required />
+									<label for="powerExperienceNo">No</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group d-flex flex-column">
+						<label for="experienceDetails">State Briefly Where Experience Was Gained. <span>*</span></label>
+						<textarea id="experienceDetails" rows="5" class="p-3" required></textarea>
+					</div>
+
+					<div class="form-group">
+						<label>
+							Gennex Technologies is committed to protecting and respecting your privacy, and we'll only use your personal information to administer your account and to provide the products and services you requested from us.
+						</label>
+						<div class="choice">
+							<div class="item">
+								<input type="radio" name="consent" id="consentYes" value="Yes" required />
+								<label for="consentYes">By clicking "Register", I consent to receiving updates about the next solar academy</label>
+							</div>
+						</div>
+					</div>
+
+					<input type="submit" class="buttons py-2 px-4" value="Submit" />
+				</form>
+			</div>
+		</div>
+
 
 		<footer>
 			<div class="container devsas">
@@ -370,3 +362,61 @@
 		<script src="js/menu.js"></script>
 	</body>
 </html>
+
+
+<script>
+async function handleSubmit(event) {
+  event.preventDefault();
+  
+  const form = document.getElementById('registrationForm');
+  const messageDiv = document.getElementById('message');
+  const loadingDiv = document.getElementById('loading');
+  
+  // Hide message and show loading
+  messageDiv.style.display = 'none';
+  loadingDiv.style.display = 'block';
+
+  // Collect form data
+  const formData = {
+    firstName: document.getElementById('firstName').value,
+    lastName: document.getElementById('lastName').value,
+    email: document.getElementById('email').value,
+    phone: document.getElementById('phone').value,
+    stateOfOrigin: document.getElementById('stateOfOrigin').value,
+    scienceBackground: document.querySelector('input[name="scienceBackground"]:checked').value,
+    powerExperience: document.querySelector('input[name="powerExperience"]:checked').value,
+    experienceDetails: document.getElementById('experienceDetails').value,
+    consent: document.querySelector('input[name="consent"]:checked').value
+  };
+
+  try {
+    const response = await fetch('https://meeqat-mbd.onrender.com/api/aplus/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData)
+    });
+
+    const result = await response.json();
+
+    // Hide loading
+    loadingDiv.style.display = 'none';
+
+    if (response.ok) {
+      messageDiv.style.color = 'green';
+      messageDiv.textContent = 'Registration successful!';
+      form.reset();
+    } else {
+      messageDiv.style.color = 'red';
+      messageDiv.textContent = result.error || 'Registration failed. Please try again.';
+    }
+    messageDiv.style.display = 'block';
+  } catch (error) {
+    loadingDiv.style.display = 'none';
+    messageDiv.style.color = 'red';
+    messageDiv.textContent = 'An error occurred. Please try again.';
+    messageDiv.style.display = 'block';
+  }
+}
+</script>
